@@ -5,12 +5,13 @@ import Home from './pages/Home';
 import Marketplace from './pages/Marketplace';
 import Profile from './pages/Profile';
 import UserProfile from "./components/UserProfile2";
-import VSIR from './pages/VSIR';
+import Music from './pages/Music';
 import Chatbot from './pages/Chatbot';
 import Settings from './pages/Settings';
 import Login from "./Login";
 import Register from './Register';
 import './App.css';
+import MidwestBoy from './pages/MidwestBoy';
 
 function App() {
   return (
@@ -28,8 +29,12 @@ function App() {
               element={<Marketplace />}
             />
             <Route
-              path='/VSIR'
-              element={<VSIR />}
+              path='/Music'
+              element={<Music />}
+            />
+            <Route
+              path='/MidwestBoy'
+              element={<MidwestBoy />}
             />
             <Route
               path='/Login'

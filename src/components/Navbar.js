@@ -53,29 +53,12 @@ function AuthNavbar({ isAuthenticated, currentPage, handlePageChange }) {
            <Link className='MobileLinks' to='/Marketplace' onClick={closeMenu}>
              Marketplace
            </Link>
-           <Link className='MobileLinks' to='/VSIR' onClick={closeMenu}>
-             VSIR
+           <Link className='MobileLinks' to='/Music' onClick={closeMenu}>
+             Music
            </Link>
-           <Link className='MobileLinks' to='/Chatbot' onClick={closeMenu}>
-             Chatbot
+           <Link className='MobileLinks' to='/MidwestBoy' onClick={closeMenu}>
+             MidwestBoy
            </Link>
-           {accessToken ? (
-             <>
-               <Link className='MobileLinks' to='/Profile' onClick={closeMenu}>
-                 Profile
-               </Link>
-               <Link className='MobileLinks' to='/Settings' onClick={closeMenu}>
-                 Settings
-               </Link>
-               <div className='logout'>
-               <button onClick={logout}>Logout</button>
-               </div>
-             </>
-           ) : (
-             <Link className='MobileLinks' to='/Login' onClick={closeMenu}>
-               Log In
-             </Link>
-           )}
          </div>
        )}
      </div>
@@ -102,46 +85,18 @@ function AuthNavbar({ isAuthenticated, currentPage, handlePageChange }) {
           <Link
             className='Links'
             style={{ color: '#ffffff' }}
-            to='/VSIR'
-            // Check to see if the currentPage is `Homework`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            to='/Music'
           >
-            VSIR
+            Music
           </Link>
 
           <Link
             className='Links'
             style={{ color: '#ffffff' }}
-            to='/Chatbot'
-            // Check to see if the currentPage is `Homework`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            to='/MidwestBoy'
           >
-            Chatbot
+            MidwestBoy
           </Link>
-
-          {accessToken ? (
-            <>
-              {/* <Link
-                className='Links'
-                style={{ color: '#ffffff' }}
-                to={`/profile/${userId}`}
-              >
-                My Profile
-              </Link> */}
-
-              <Link
-                className='Links'
-                style={{ color: '#ffffff' }}
-                to='/Profile'
-              >
-                Profile
-              </Link>
-
-              <button onClick={logout}>Logout</button>
-            </>
-          ) : (
-            <Link className='Links' style={{ color: '#ffffff' }} to='/Login'>
-              Log In
-            </Link>
-          )}
         </div>
       </nav>
     </div>

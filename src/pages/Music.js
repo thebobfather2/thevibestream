@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./VSIR.css";
 
-function VSIR() {
+function Music() {
   return (
     <div className="MainContainer" style={{minHeight: "100vh"}}>
       <iframe
@@ -17,4 +17,4 @@ function VSIR() {
   );
 }
 
-export default VSIR;
+export default Music;
