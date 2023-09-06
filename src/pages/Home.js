@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css";
-import vsnLogo from "../img/vsnredbanner.jpg";
+import joehomebanner from "../img/joebackground.png";
 
     
 function Home () {
@@ -8,7 +8,7 @@ function Home () {
   return (
     <main className="MainContainer">
       <section className={`p-3`}>
-        <img className='imgHome' src={vsnLogo} />
+        <img className='imgHome' src={joehomebanner} />
       </section>
     </main>
   )

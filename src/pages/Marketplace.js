@@ -9,7 +9,7 @@ function Marketplace () {
     async function initializeWalletFrameClient() {
       const walletFrameClient = await ElvWalletFrameClient.InitializeFrame({
         requestor: "My App",
-        walletAppUrl: "https://wallet.contentfabric.io/?mid=iq__PoyQD1L385EWHguKYvGNUbpyXbP&hgm=/#/marketplace/iq__PoyQD1L385EWHguKYvGNUbpyXbP/store",
+        walletAppUrl: "https://wallet.contentfabric.io/?mid=iq__MDEUdJkpiZW7tbPSh9FfEpZfcbK=/#/marketplace/iq__MDEUdJkpiZW7tbPSh9FfEpZfcbK/store",
         target: document.getElementById("wallet-target")
       });
       setWalletFrameClient(walletFrameClient);

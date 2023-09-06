@@ -48,7 +48,7 @@ function Header({ handlePageChange, currentPage }) {
         }}
       >
         <a href="/" style={{ display: 'block' }}>
-          <img src="./img/vsnlogo.png" style={{ width: '70px', marginLeft: '30px' }} alt="Logo" />
+          <img src="./img/goldthumb.png" style={{ width: '70px', marginLeft: '30px' }} alt="Logo" />
         </a>
       </h1>
       <Navbar handlePageChange={handlePageChange} currentPage={currentPage} />
